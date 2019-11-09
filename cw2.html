@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>LITWO Ojczyzno moja</title>
+		<link rel="stylesheet" media="screen"  href="cw2.css" type="text/css" />
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;
+		charset=UTF-8" />
+	</head>
+	<body>
+
+		<div>
+			<h1>Ćwiczenia - odnośniki</h1>
+			<ul>
+				<li><a href="cw1.html">Ćwiczenie 1</a></li>
+				<li><a href="cw2.html">Ćwiczenie 2</a></li>
+				<li><a href="cw3.html">Ćwiczenie 3</a></li>
+				<li><a href="cw4.html">Ćwiczenie 4</a></li>
+			</ul>
+		</div>
+			
+		<div>
+		<h1>Spis treści</h1>
+		<ul>	
+			<li><a href="#format">Formatowanie tekstu</a></li>
+			<li><a href="#kod">Kod</a></li>
+			<li><a href="#wzór">Wzór matematyczny</a></li>
+			<li><a href="#odp">Odpowiedzi na pytania</a></li>
+		</ul>
+
+			<a id="format"></a>
+			<h1>Nagłówek w języku polskim</h1>
+			<p>
+			<b>Litwo, Ojczyzno moja! ty jesteś jak zdrowie;</b><br/>
+			<strong>Ile cię trzeba cenić, ten tylko się dowie,</strong><br/>
+			</p>
+			<p>
+			<i>Kto cię stracił. Dziś piękność twą w całej ozdobie</i><br/>
+			<em>Widzę i opisuję, bo tęsknię po tobie.</em><br/>
+			</p>
+			<p>
+			<a id="kod"></a>
+			<code>
+				int main()
+				{
+				int A[] = {1, 4, 10};
+				int B[] = {2, 15, 20};
+				int C[] = {10, 12};
+
+				int p = sizeof A / sizeof A[0];
+				int q = sizeof B / sizeof B[0];
+				int r = sizeof C / sizeof C[0];
+
+				findClosest(A, B, C, p, q, r);
+				return 0;
+				} 
+			</code><br/>
+			<samp>int main() 
+				{ 
+				int A[] = {1, 4, 10}; 
+				int B[] = {2, 15, 20}; 
+				int C[] = {10, 12}; 
+
+				int p = sizeof A / sizeof A[0]; 
+				int q = sizeof B / sizeof B[0]; 
+				int r = sizeof C / sizeof C[0]; 
+
+				findClosest(A, B, C, p, q, r); 
+				return 0; 
+				} </samp><br/>
+			</p>
+			<p>
+			<a id="wzór"></a>
+			x<sub>1</sub> = y<sup>109</sup><br/>
+			x &lt; 1094385<br/>
+			x &gt; 34343234234234234<br/>
+			</p>
+			
+			<a id="odp"></a>
+			<h1>Odpowiedzi na pytania</h1>
+			<p>
+			1. Wizualnie jest tak samo. EM  używa się, żeby coś zaakcentować podkreślić. Emfaza jest stanem logicznym - może być używana jako kursywa, ale też na przykład jako czerwony, podkreślony tekst. Znacznik I reprezentuje stan fizyczny - jest po prostu pochylonym tekstem. <br/>
+			2. Wizualnie jest tak samo. Natomiast element STRONG powinniśmy stosować wtedy, gdy tekst ma znaczenie merytoryczne, jest ważny dla całości i trzeba na niego zwrócić szczególną uwagę. Znacznik B z kolei stosujem,gdy tekst ma być pogrubiony wizualnie, ale nie jest bardziej znaczący z punktu widzenia merytorycznego. <br/>
+			3. CODE  stosuje się do kodów programów komputerowych, a SAMP do outputów programu. Nie muszą dawać identycznych wyników. <br/>
+			4.Wizualnie te formatowania niczym się od siebie nie różnią, jednak po użyciu pierwszej możliwości mamy do czynienia z dwoma paragrafami, po użyciu drugiej - z jednym, podzielonym pustą linią.
+			</p>
+			<p>
+			<a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+			</p>
+		</div>
+	</body>
+</html>
