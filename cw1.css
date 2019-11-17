@@ -15,7 +15,49 @@ p {
   text-indent: 50px;
 }
 
+p::first-letter {
+	initial-letter: 4;
+	font-weight: bold; 
+	color: white;
+	font-size: 200%;
+}
+
 div.tresc {
 	background: lightblue;
-	width: 300px;
+	width: 60%;
+	margin-left: 20%;
 }
+
+div.menu {
+	background: pink; 
+	color: white!important;
+	width: 20%;
+	position: fixed;
+	z-index: 1;
+	/*top: 0;*/
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	list-style-type: none;	
+}
+
+div.menu > h1 {
+	color: white!important;
+}
+a {
+        cursor: default;
+        color: white;
+	background-color: lightblue;
+}
+
+@media only screen and (max-width: 800px) {
+    .menu { display: none; }
+}
+
+a:hover {
+        background-color: white;
+        color: pink;
+}
+

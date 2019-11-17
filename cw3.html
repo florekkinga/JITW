@@ -4,28 +4,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Ćwiczenie 3</title>
+		<link rel="stylesheet" media="print" href="print_styles.css" type="text/css" />
+<link rel="alternate stylesheet" media="screen" href="alternative_styles.css" title="Alternative" type="text/css" />
 		<link rel="stylesheet" media="screen"  href="cw3.css" type="text/css" />
 		<meta http-equiv="Content-Type" content="application/xhtml+xml;
 		charset=UTF-8" />
 	</head>
 	<body>
+         <div class="menu">
+                        <h1>Ćwiczenia</h1>
+                        <ul>
+                                <li><a href="cw1.html">Ćwiczenie 1</a></li>
+                                <li><a href="cw2.html">Ćwiczenie 2</a></li>
+                                <li><a href="cw3.html">Ćwiczenie 3</a></li>
+                                <li><a href="cw4.html">Ćwiczenie 4</a></li>
+                        </ul>
 
-		<div>
-			<h1>Ćwiczenia - odnośniki</h1>
-			<ul>
-				<li><a href="cw1.html">Ćwiczenie 1</a></li>
-				<li><a href="cw2.html">Ćwiczenie 2</a></li>
-				<li><a href="cw3.html">Ćwiczenie 3</a></li>
-				<li><a href="cw4.html">Ćwiczenie 4</a></li>
-			</ul>
-		</div><div>
-			 <h1>Spis treści</h1>
-			 <ul>
-				 <li><a href="#tabela">Tabela</a></li>
-				 <li><a href="#lista">Lista</a></li>
-				 <li><a href="#def">Definicje</a></li>
-			 </ul>
-			
+                        <h1>Spis treści</h1>
+                        <ul>
+                                <li><a href="#tabela">Tabela</a></li>
+                                <li> <a href="#lista">Lista</a></li>
+                                <li> <a href="#def">Definicje</a></li>
+                </ul>
+
+		</div>
+		<div class="tresc">
 			<a id="tabela"></a>
 			<h1> Tabela </h1>
 			<table border="1">
@@ -37,9 +40,9 @@
 					<tr><td>tabelka nr 1</td><td></td></tr>
 				</tfoot>
 				<tbody>
-					<tr><td>zwykła komórka 1</td><td>komórka 2</td></tr>
-					<tr><td>zwykła komórka 3</td><td>komórka 4</td></tr>
-					<tr><td>zwykła komórka 5</td><td>komórka 6</td></tr>
+					<tr><td class="color1">zwykła komórka 1</td><td class="color2">komórka 2</td></tr>
+					<tr><td class ="color1">zwykła komórka 3</td><td class ="color2">komórka 4</td></tr>
+					<tr><td class ="color1">zwykła komórka 5</td><td class ="color2">komórka 6</td></tr>
 					<tr><td>zwykła komórka 7</td><td>komórka 8</td></tr>
 					<tr><td colspan = "2">scalona komórka</td></tr>
 					<tr><td rowspan = "2">scalony</td><td>wiersz</td></tr>
@@ -48,30 +51,31 @@
 			</table>
 			<a id="lista"></a>
 			<h1> Wielopoziomowa lista </h1>
-			<ol>
+			<ol>	
 				<li>Coffee
-					<ol>
+					<ol>	
 						<li>latte</li>
 						<li>flat white</li>
 						<li>espresso</li>
 					</ol>
-				</li>
+				</li>	
 				<li>Tea
 					<ol>
-						<li>zielona</li>
+						<li>zielona
 						<ol>
 							<li> lipton </li>
 							<li> dilmah </li>
 							<li> minutka </li>
 							<li> saga </li>
 						</ol>
+						</li>
 						<li>czarna</li>
 						<li>owocowa</li>
 					</ol>
 				</li>
 				<li>Milk</li>
 			</ol>
-			<a id="Definicje"></a>
+			<a id="def"></a>
 			<h1> Wykaz definicji kilku terminów</h1>
 			<dl>
 				<dt>Coffee</dt>
@@ -85,6 +89,13 @@
 			<a href="http://validator.w3.org/check?uri=referer"><img
       src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
 			</p>
+			<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
 		</div>
 	</body>
 </html>
